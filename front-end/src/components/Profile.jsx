@@ -18,7 +18,7 @@ function Profile() {
   const fetchUserInfo = async () => {
     try {
       // Make an Axios GET request to get user information
-      const response = await axios.get('http://localhost:8080/api/user', {
+      const response = await axios.get('https://internship-wctf.onrender.com/api/user', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
